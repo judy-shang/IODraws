@@ -1,0 +1,69 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.4">
+  <diagram name="Page-1" id="K-xP9tW0OGEZyAImhuks">
+    <mxGraphModel dx="1042" dy="692" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-9" edge="1" parent="1" source="snkjqpvRlWpTFxsMTAAj-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="snkjqpvRlWpTFxsMTAAj-14" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-21" edge="1" parent="1" source="snkjqpvRlWpTFxsMTAAj-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="snkjqpvRlWpTFxsMTAAj-20" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-2" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span class=&quot;15&quot; style=&quot;&quot;&gt;&lt;font style=&quot;&quot; face=&quot;Helvetica&quot;&gt;仿射配准矫正&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="105" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-7" edge="1" parent="1" source="snkjqpvRlWpTFxsMTAAj-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="snkjqpvRlWpTFxsMTAAj-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="读取头颅CT Dicom图像" vertex="1">
+          <mxGeometry height="60" width="130" x="100" y="321" as="geometry" />
+        </mxCell>
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-16" edge="1" parent="1" source="snkjqpvRlWpTFxsMTAAj-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="snkjqpvRlWpTFxsMTAAj-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-14" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="图像预处理，Dicom转为NII" vertex="1">
+          <mxGeometry height="60" width="120" x="285" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-19" edge="1" parent="1" source="snkjqpvRlWpTFxsMTAAj-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="snkjqpvRlWpTFxsMTAAj-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-15" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="Ants进行仿射配准" vertex="1">
+          <mxGeometry height="60" width="130" x="443" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-22" edge="1" parent="1" source="snkjqpvRlWpTFxsMTAAj-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="snkjqpvRlWpTFxsMTAAj-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-18" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="由变换矩阵获取矫正角度Angle1" vertex="1">
+          <mxGeometry height="60" width="130" x="443" y="527" as="geometry" />
+        </mxCell>
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-24" edge="1" parent="1" source="snkjqpvRlWpTFxsMTAAj-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="snkjqpvRlWpTFxsMTAAj-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-28" edge="1" parent="1" source="snkjqpvRlWpTFxsMTAAj-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="snkjqpvRlWpTFxsMTAAj-27" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-20" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span class=&quot;15&quot; style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;&quot;&gt;基于大脑镰特征的矫正&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="155" x="87.5" y="614" as="geometry" />
+        </mxCell>
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-26" edge="1" parent="1" source="snkjqpvRlWpTFxsMTAAj-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="snkjqpvRlWpTFxsMTAAj-25" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-23" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="&lt;p class=&quot;MsoNormal&quot;&gt;图像预处理，定位、去颅骨、滤波&lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="155" x="430.5" y="614" as="geometry" />
+        </mxCell>
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-29" edge="1" parent="1" source="snkjqpvRlWpTFxsMTAAj-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="snkjqpvRlWpTFxsMTAAj-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-25" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="&lt;p class=&quot;MsoNormal&quot;&gt;在Angle1的限制下，&lt;br&gt;根据大脑镰定位角度&lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="155" x="430.5" y="708" as="geometry" />
+        </mxCell>
+        <mxCell id="snkjqpvRlWpTFxsMTAAj-27" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;获取矫正角度，&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;输出矫正图像&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="105" y="771" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
